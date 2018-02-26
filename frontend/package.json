@@ -1,6 +1,19 @@
 {
   "name": "frontend-boilerplate",
   "private": true,
+  "paths": {
+    "src": {
+      "sass": "./sass",
+      "js": "./js",
+      "fonts": "./node_modules/font-awesome/fonts"
+    },
+    "dest": {
+      "root": "./wwwroot/dist",
+      "css": "/css",
+      "js": "/js",
+      "fonts": "/fonts"
+    }
+  },
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
     "babelify": "^7.3.0",
