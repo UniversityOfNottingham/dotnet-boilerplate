@@ -1,4 +1,4 @@
-﻿const { dest, src } = require('../package.json').paths;
+const { dest, src } = require('../package.json').paths;
 
 const gulp = require('gulp');
 const sourcemaps = require('gulp-sourcemaps');
@@ -10,7 +10,7 @@ const header = require('gulp-header');
 
 const fileHeader = require('./file-header');
 
-gulp.task('js', /*['eslint'], */() =>
+gulp.task('js', ['eslint'], () =>
   browserify({
     entries: `${src.js}/main.js`
   })
