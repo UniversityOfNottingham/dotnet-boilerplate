@@ -4,14 +4,12 @@
   "paths": {
     "src": {
       "sass": "./sass",
-      "js": "./js",
-      "fonts": "./node_modules/font-awesome/fonts"
+      "js": "./js"
     },
     "dest": {
       "root": "./wwwroot/dist",
       "css": "/css",
-      "js": "/js",
-      "fonts": "/fonts"
+      "js": "/js"
     }
   },
   "devDependencies": {
@@ -21,7 +19,9 @@
     "bootstrap": "^4.0.0",
     "browserify": "^14.4.0",
     "del": "^3.0.0",
-    "font-awesome": "4.7.0",
+    "@fortawesome/fontawesome": "1.1.3",
+    "@fortawesome/fontawesome-free-solid": "5.0.6",
+    "@fortawesome/fontawesome-free-regular": "5.0.6",
     "gulp": "^3.9.1",
     "gulp-header": "^1.8.9",
     "gulp-rename": "1.2.2",
