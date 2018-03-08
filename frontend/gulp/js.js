@@ -12,7 +12,8 @@ const fileHeader = require('./file-header');
 
 gulp.task('js', ['eslint'], () =>
   browserify({
-    entries: `${src.js}/main.js`
+    entries: `${src.js}/main.js`,
+    debug: true
   })
     .transform('babelify', { presets: [['env', { targets: { browsers: ['last 2 versions'] } }]] })
     .bundle()
