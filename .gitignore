@@ -1,1 +1,4 @@
 node_modules
+
+# we ignore the package lock since this is boilerplate not an actual project
+package-lock.json
