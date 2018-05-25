@@ -9,6 +9,7 @@ const eslint = require("./gulp-tasks/eslint");
 const js = require("./gulp-tasks/js");
 const sasslint = require("./gulp-tasks/sass-lint");
 const sass = require("./gulp-tasks/sass");
+const uglifyCss = require("./gulp-tasks/uglify-css");
 
 // define compound tasks
 function buildJs(done) {
@@ -16,7 +17,7 @@ function buildJs(done) {
 }
 
 function buildSass(done) {
-  return gulp.series(sasslint, sass)(done);
+  return gulp.series(sasslint, sass, uglifyCss)(done);
 }
 
 // export everything that should be public
@@ -27,6 +28,7 @@ module.exports = {
   buildJs,
   sasslint,
   sass,
+  uglifyCss,
   buildSass
 };
 
