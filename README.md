@@ -23,8 +23,12 @@ The files in here will enable you to:
 
 You can (should!) copy the contents of this folder wholesale to the root of your Web Project's folder and it will Just Work™.
 
-## Requirements
+## Notes
 
 * You must have a modern version of Node installed (the important thing is to have npm > 5)
 * You may want to be able to run `gulp` globally, so make sure you have `gulp-cli` installed globally
   * You can install it as follows: `npm i -g gulp-cli`
+
+- Because this is a boilerplate, it doesn't keep a `package-lock.json`.
+  * Your project will lock versions when you first `npm install`.
+  * This means that this repo does not resolve any package dependency vulnerabilities. It is **your repsonsibility** to run `npm audit` in the context of **your own project** and **resolve vulnerabilities**.
