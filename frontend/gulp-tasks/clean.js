@@ -1,7 +1,6 @@
-﻿const { dest } = require('../package.json').paths;
+﻿const { dest } = require("../package.json").paths;
+const del = require("del");
 
-const gulp = require('gulp');
-const del = require('del');
-
-// Delete all generated content.
-gulp.task('clean', () => del.sync(dest.root));
+module.exports = function clean() {
+  return del(dest.root);
+};
