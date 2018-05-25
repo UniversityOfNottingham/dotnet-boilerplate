@@ -7,13 +7,14 @@ const gulp = require("gulp");
 const clean = require("./gulp-tasks/clean");
 const eslint = require("./gulp-tasks/eslint");
 const js = require("./gulp-tasks/js");
+const uglify = require("./gulp-tasks/uglify");
 const sasslint = require("./gulp-tasks/sass-lint");
 const sass = require("./gulp-tasks/sass");
 const uglifyCss = require("./gulp-tasks/uglify-css");
 
 // define compound tasks
 function buildJs(done) {
-  return gulp.series(eslint, js)(done);
+  return gulp.series(eslint, js, uglify)(done);
 }
 
 function buildSass(done) {
@@ -26,6 +27,7 @@ module.exports = {
   eslint,
   js,
   buildJs,
+  uglify,
   sasslint,
   sass,
   uglifyCss,
