@@ -1,8 +1,6 @@
 options:
   merge-default-rules: false
   max-warnings: 10
-files:
-  include: 'src/sass/**/*.scss'
 rules:
   extends-before-mixins: 2
   extends-before-declarations: 2
@@ -34,10 +32,6 @@ rules:
   no-important: 2
   pseudo-element: 2
   single-line-per-selector: 2
-  indentation:
-    - 2
-    -
-      size: 2
   bem-depth:
     - 2
     -
@@ -46,16 +40,6 @@ rules:
     - 3
     -
       max-depth: 2
-  brace-style:
-    - 2
-    -
-      style: '1tbs'
-      allow-single-line: false
-  empty-line-between-blocks:
-    - 0
-    -
-      include: true
-      allow-single-line-rulesets: false
   no-duplicate-properties:
     - 1
     -
@@ -114,42 +98,6 @@ rules:
     allowed-shorthands:
       - 1
       - 2
-  space-after-bang:
-    - 2
-    -
-      include: false
-  space-before-bang:
-    - 2
-    -
-      include: true
-  space-before-brace:
-    - 2
-    -
-      include: true
-  space-before-colon:
-    - 2
-    -
-      include: false
-  space-after-colon:
-    - 2
-    -
-      include: true
-  space-between-parens:
-    - 2
-    -
-      include: false
-  space-after-comma:
-    - 2
-    -
-      include: true
-  space-around-operator:
-    - 2
-    -
-      include: true
-  trailing-semicolon:
-    - 2
-    -
-      include: true
   no-invalid-hex: 2
   hex-notation:
     - 1
@@ -169,10 +117,6 @@ rules:
     - 2
     -
       ignore-non-standard: true
-  quotes:
-    - 2
-    -
-      style: single
   property-units:
     - 0
     -

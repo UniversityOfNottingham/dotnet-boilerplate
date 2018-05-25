@@ -7,6 +7,7 @@ const gulp = require("gulp");
 const clean = require("./gulp-tasks/clean");
 const eslint = require("./gulp-tasks/eslint");
 const js = require("./gulp-tasks/js");
+const sasslint = require("./gulp-tasks/sass-lint");
 
 // define compound tasks
 function buildJs(done) {
@@ -18,7 +19,8 @@ module.exports = {
   clean,
   eslint,
   js,
-  buildJs
+  buildJs,
+  sasslint
 };
 
 // define default task
