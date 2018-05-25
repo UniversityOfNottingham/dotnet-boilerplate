@@ -1,3 +1,1 @@
-﻿const pkg = require('../package.json');
-
-module.exports = `/* ${pkg.name} ${pkg.version} | ${new Date()} */\n`;
+﻿module.exports = `/* ${new Date()} */\n`;
