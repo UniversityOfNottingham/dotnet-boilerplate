@@ -26,9 +26,11 @@ You can (should!) copy the contents of this folder wholesale to the root of your
 ## Notes
 
 * You must have a modern version of Node installed (the important thing is to have npm > 5)
+  * Version check node and npm as follows:
+    * `node -v`
+    * `npm -v`
 * You may want to be able to run `gulp` globally, so make sure you have `gulp-cli` installed globally
   * You can install it as follows: `npm i -g gulp-cli`
-
-- Because this is a boilerplate, it doesn't keep a `package-lock.json`.
+* Because this is a boilerplate, it doesn't keep a `package-lock.json`.
   * Your project will lock versions when you first `npm install`.
-  * This means that this repo does not resolve any package dependency vulnerabilities. It is **your repsonsibility** to run `npm audit` in the context of **your own project** and **resolve vulnerabilities**.
+  * This means that this repo does not resolve any package dependency vulnerabilities. It is **your responsibility** to run `npm audit` in the context of **your own project** and **resolve vulnerabilities**.
