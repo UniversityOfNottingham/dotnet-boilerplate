@@ -1,21 +1,15 @@
 {
+  "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 2018,
     "sourceType": "module"
   },
   "env": {
     "browser": true,
+    "es6": true,
     "node": true
   },
   "rules": {
-    "semi": 2,
-    "indent": [
-      2,
-      2,
-      {
-        "SwitchCase": 1
-      }
-    ],
     "camelcase": 2,
     "no-unused-vars": 1,
     "prefer-const": 2,
@@ -30,25 +24,10 @@
     "no-new-func": 2,
     "no-array-constructor": 2,
     "prefer-destructuring": 2,
-    "quotes": [
-      1,
-      "single"
-    ],
     "prefer-template": 2,
     "no-eval": 2,
     "prefer-rest-params": 2,
     "prefer-arrow-callback": 2,
-    "arrow-spacing": [
-      2,
-      {
-        "before": true,
-        "after": true
-      }
-    ],
-    "arrow-parens": [
-      2,
-      "as-needed"
-    ],
     "no-dupe-class-members": 2,
     "no-duplicate-imports": 2,
     "dot-notation": 2,
@@ -58,40 +37,6 @@
       {
         "null": "ignore"
       }
-    ],
-    "brace-style": [
-      2,
-      "stroustrup"
-    ],
-    "spaced-comment": [
-      2,
-      "always"
-    ],
-    "space-before-blocks": 2,
-    "space-infix-ops": 2,
-    "padded-blocks": [
-      2,
-      "never"
-    ],
-    "space-in-parens": [
-      2,
-      "never"
-    ],
-    "array-bracket-spacing": [
-      2,
-      "never"
-    ],
-    "object-curly-spacing": [
-      2,
-      "always"
-    ],
-    "comma-style": [
-      2,
-      "last"
-    ],
-    "comma-dangle": [
-      2,
-      "never"
     ]
   }
 }

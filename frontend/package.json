@@ -1,5 +1,4 @@
 {
-  "name": "frontend-boilerplate",
   "private": true,
   "paths": {
     "src": {
@@ -12,34 +11,51 @@
       "js": "/js"
     }
   },
+  "scripts": {
+    "precommit": "node ./node_modules/pretty-quick/bin/pretty-quick.js --staged"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": ["last 2 versions"]
+          }
+        }
+      ]
+    ]
+  },
   "devDependencies": {
-    "babel-preset-env": "^1.6.1",
-    "babelify": "^7.3.0",
-    "babel-eslint": "^8.2.2",
-    "bootstrap": "^4.0.0",
-    "browserify": "^14.4.0",
+    "@babel/core": "^7.0.0-beta.48",
+    "@babel/preset-env": "^7.0.0-beta.48",
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-regular": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "babel-eslint": "^8.2.3",
+    "babelify": "^9.0.0",
+    "bootstrap": "^4.1.1",
+    "browserify": "^16.2.2",
     "del": "^3.0.0",
-    "@fortawesome/fontawesome": "1.1.3",
-    "@fortawesome/fontawesome-free-solid": "5.0.6",
-    "@fortawesome/fontawesome-free-regular": "5.0.6",
-    "gulp": "^3.9.1",
-    "gulp-eslint": "^4.0.2",
-    "gulp-header": "^1.8.9",
-    "gulp-rename": "1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sass-lint": "^1.3.2",
-    "gulp-sourcemaps": "^2.4.1",
-    "gulp-uglify-es": "^1.0.1",
-    "gulp-uglifycss": "1.0.8",
-    "eslint": "^4.18.1",
+    "eslint": "^4.19.1",
     "eslint-config-defaults": "^9.0.0",
+    "gulp": "^4.0.0",
+    "gulp-eslint": "^4.0.2",
+    "gulp-header": "^2.0.5",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-uglifycss": "^1.0.9",
+    "husky": "^0.14.3",
     "jquery": "^3.3.1",
     "jquery-validation": "^1.17.0",
-    "jquery-validation-unobtrusive": "^3.2.6",
-    "node-notifier": "^5.1.2",
-    "popper.js": "^1.12.9",
-    "require-dir": "^1.0.0",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "jquery-validation-unobtrusive": "^3.2.10",
+    "popper.js": "^1.14.3",
+    "prettier": "^1.12.1",
+    "pretty-quick": "^1.6.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
   }
 }
