@@ -1,15 +1,15 @@
-@import 'colours';
+@import "colours";
 
 // Bootstrap's $theme-colors map for modifying the theme
 // - if you want the default theme back, don't import this file! ;)
 // - if you want to change the colours, do :)
 $theme-colors: (
-  'primary': $brand-primary,
-  'secondary': $brand-secondary,
-  'success': $brand-success,
-  'danger': $brand-danger,
-  'warning': $brand-warning,
-  'info': $brand-info,
-  'light': $brand-light,
-  'dark': $brand-dark
+  "primary": $brand-primary,
+  "secondary": $brand-secondary,
+  "success": $brand-success,
+  "danger": $brand-danger,
+  "warning": $brand-warning,
+  "info": $brand-info,
+  "light": $brand-light,
+  "dark": $brand-dark
 );

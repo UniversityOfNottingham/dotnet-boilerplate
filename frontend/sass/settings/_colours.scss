@@ -3,7 +3,6 @@
 // literal helpers
 $color-white: #fff;
 
-
 // UoN brand colours (appropriate for Bootstrap)
 // (you can replace these to theme differently)
 $brand-primary: #005597; // Blue Three
@@ -12,8 +11,11 @@ $brand-success: #37a158; // Bright Green
 $brand-danger: #d9292b; // Bright Red
 $brand-warning: #d27826; // Arts
 $brand-info: #099085; // Turquoise
-$brand-light: mix($color-white, $brand-secondary, 80%); // Neutral Two (tinted lighter)
+$brand-light: mix(
+  $color-white,
+  $brand-secondary,
+  80%
+); // Neutral Two (tinted lighter)
 $brand-dark: #4a4949; // Neutral One
-
 
 // Site specific colours below
