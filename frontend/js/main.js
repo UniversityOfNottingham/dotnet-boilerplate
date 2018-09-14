@@ -6,9 +6,7 @@ import "./globals";
 // Third party libs
 import "jquery";
 import "bootstrap";
-import "@fortawesome/fontawesome";
-import "@fortawesome/fontawesome-free-solid";
-import "@fortawesome/fontawesome-free-regular";
+import "@fortawesome/fontawesome-free/js/all";
 import "jquery-validation";
 import "jquery-validation-unobtrusive";
 
