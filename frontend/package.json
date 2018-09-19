@@ -12,7 +12,10 @@
     }
   },
   "scripts": {
-    "precommit": "pretty-quick --staged"
+    "precommit": "pretty-quick --staged",
+    "clean": "rimraf wwwroot/dist",
+    "lint:js": "eslint js/**",
+    "lint:sass": "sass-lint sass/**"
   },
   "sasslintConfig": "./node_modules/@universityofnottingham/sasslint-config/.sass-lint.yml",
   "eslintConfig": {
@@ -36,14 +39,14 @@
     "@babel/core": "^7.0.1",
     "@babel/preset-env": "^7.0.0",
     "@fortawesome/fontawesome-free": "^5.3.1",
+    "@universityofnottingham/eslint-config": "^1.0.0",
+    "@universityofnottingham/sasslint-config": "^1.0.0",
     "babel-eslint": "^9.0.0",
     "babelify": "^10.0.0",
     "bootstrap": "^4.1.3",
     "browserify": "^16.2.2",
     "del": "^3.0.0",
     "eslint": "^5.5.0",
-    "@universityofnottingham/eslint-config": "^1.0.0",
-    "@universityofnottingham/sasslint-config": "^1.0.0",
     "gulp": "^4.0.0",
     "gulp-eslint": "^5.0.0",
     "gulp-header": "^2.0.5",
@@ -60,6 +63,7 @@
     "popper.js": "^1.14.4",
     "prettier": "^1.14.2",
     "pretty-quick": "^1.6.0",
+    "rimraf": "^2.6.2",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   }
