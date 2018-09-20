@@ -12,8 +12,9 @@
     }
   },
   "scripts": {
-    "precommit": "node ./node_modules/pretty-quick/bin/pretty-quick.js --staged"
+    "precommit": "pretty-quick --staged"
   },
+  "sasslintConfig": "./node_modules/@universityofnottingham/sasslint-config/.sass-lint.yml",
   "eslintConfig": {
     "extends": "@universityofnottingham"
   },
@@ -42,6 +43,7 @@
     "del": "^3.0.0",
     "eslint": "^5.5.0",
     "@universityofnottingham/eslint-config": "^1.0.0",
+    "@universityofnottingham/sasslint-config": "^1.0.0",
     "gulp": "^4.0.0",
     "gulp-eslint": "^5.0.0",
     "gulp-header": "^2.0.5",
